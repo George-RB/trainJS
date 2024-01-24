@@ -1,6 +1,22 @@
 "use strict";
 
-alert("Hello");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?",''); //+prompt значит что ответ только числовой
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-const quest = prompt("Привет! Как тебя зовут?");
-alert(`Привет, ${quest}`);
+const a = prompt('Один из последних просмотренных фильмов?',''),
+      b = prompt('На сколько его оцените?'),
+      c = prompt('Один из последних просмотренных фильмов?',''),
+      d = prompt('На сколько его оцените?');
+// personalMovieDB.movies = prompt('Один из последних просмотренных фильмов?','');
+// b2 = prompt('На сколько его оцените?');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
