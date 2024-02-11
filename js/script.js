@@ -22,13 +22,6 @@ const personalMovieDB = {
 };
 
 
-
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-// let i = numberOfFilms;
-
-
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
         let a = prompt('Один из последних просмотренных фильмов?', ''),
@@ -80,3 +73,4 @@ function writeYourGenres() {
     }
 }
 writeYourGenres();
+
